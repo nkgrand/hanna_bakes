@@ -13,7 +13,7 @@ import { slideshow } from "./smallSlider.js";
 import { modalSlider } from "./modalSlider.js";
 import { btnPress } from "./mainBtnPress.js";
 
-const body = document.querySelector("#main__page");
+const body = document.querySelector("body");
 
 modalWindowCreate(body);
 modalShowWindow(body);

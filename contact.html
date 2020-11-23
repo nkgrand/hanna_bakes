@@ -89,7 +89,7 @@
               easy. Just click “Edit Text” or double <br />
               click me to add your own content and make changes to the font.
             </p>
-            <form action="" method="POST" class="contact__form">
+            <form action="" method="POST" class="contact__form" id="submitForm">
               <div class="contact__form-row">
                 <input
                   type="text"
@@ -98,6 +98,7 @@
                   name="name"
                   placeholder="Name"
                   required
+                  id="name"
                 />
                 <input
                   type="text"
@@ -106,18 +107,19 @@
                   name="last_name"
                   placeholder="Email"
                   required
+                  id="email"
                 />
               </div>
               <div class="contact__form-row">
                 <textarea
                   name="comment"
                   class="contact__form-textarea"
-                  id=""
                   cols="30"
                   rows="10"
                   wrap="hard"
                   placeholder="Type your message here..."
                   required
+                  id="textArea"
                 ></textarea>
               </div>
               <input
