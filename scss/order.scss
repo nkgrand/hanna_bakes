@@ -7,7 +7,6 @@ a {
   height: 500px;
   display: flex;
   flex-direction: column;
-  //   border: 1px solid green;
 }
 
 .title {
@@ -18,7 +17,6 @@ a {
   align-items: center;
   margin: 0;
   padding: 15px 0 15px 15px;
-  // border-top: 1px solid grey;
   text-transform: none;
   color: rgba(41, 35, 37, 1);
   border-bottom: 1px solid #bfbfbf;
@@ -51,6 +49,9 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  &.hovering:hover {
+    background-color: #eae9ea;
+  }
 }
 
 .cd-accordion-menu input[type="checkbox"] {
@@ -201,8 +202,6 @@ a {
 
 .card__wrapper {
   width: 100%;
-  // margin-top: 50px;
-  // border: 1px solid red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -317,5 +316,9 @@ a {
     font-weight: 700;
     padding: 12px;
     letter-spacing: 0.7px;
+    &:hover {
+      cursor: pointer;
+      background: rgba(41, 35, 37, 0.85);
+    }
   }
 }

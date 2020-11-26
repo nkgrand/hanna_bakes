@@ -84,10 +84,10 @@
                 <input type="checkbox" name="group-2" id="group-2" checked />
                 <label class="label" for="group-2">Cakes menu</label>
                 <ul>
-                  <li>
+                  <li class="hovering">
                     <a href="" class="subMenu__link active">Wedding Cakes</a>
                   </li>
-                  <li>
+                  <li class="hovering">
                     <a href="" class="subMenu__link">Celebration Cakes</a>
                   </li>
                 </ul>
@@ -175,7 +175,7 @@
               </div>
             </div>
           </center>
-          <aside class="aside">
+          <aside class="aside" id="orderSide">
             <div class="title right">
               <p class="title__name">My Order</p>
               <p class="title__count">(0 items)</p>
@@ -195,14 +195,16 @@
                 <p class="title__count">$0</p>
               </div>
               <div class="comment">
-                <a href="#!" class="comment__link">Special requests</a>
+                <a href="#!" class="comment__link" id="specialRequests"
+                  >Special requests</a
+                >
               </div>
               <div class="cart__line grey"></div>
               <div class="unavailable">
                 <p class="unavailable__text">Online ordering unavailable</p>
               </div>
               <div class="order">
-                <button class="order__btn">Order now</button>
+                <button class="order__btn" id="orderBtn">Order now</button>
               </div>
             </div>
           </aside>
@@ -234,5 +236,15 @@
     </footer>
     <script type="module" src="./js/index.js"></script>
     <script src="./js/order.js"></script>
+    <div id="myModalStaticUnavailable" class="modal">
+      <div class="modal__content">
+        <div class="modal__header"><span class="modal__close">x</span></div>
+        <div class="modal__body">
+          <h3 class="modal__body-title">Oooooopppppssss!!!</h3>
+          <h4 class="modal__body-text">We are sorry. Order unavailable =(</h4>
+          <button class="modal__btn">TOO BAD =(</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

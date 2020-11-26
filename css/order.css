@@ -52,6 +52,9 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+.cd-accordion-menu li.hovering:hover {
+  background-color: #eae9ea;
+}
 
 .cd-accordion-menu input[type=checkbox] {
   position: absolute;
@@ -326,6 +329,10 @@ a {
   font-weight: 700;
   padding: 12px;
   letter-spacing: 0.7px;
+}
+.order__btn:hover {
+  cursor: pointer;
+  background: rgba(41, 35, 37, 0.85);
 }
 
 /*# sourceMappingURL=order.css.map */
