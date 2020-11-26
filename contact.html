@@ -124,8 +124,9 @@
               </div>
               <input
                 type="button"
-                class="form__btn submit__btn"
+                class="form__btn"
                 value="Submit"
+                id="submit__btn"
               />
             </form>
           </div>
@@ -157,6 +158,19 @@
         &copy; 2020 by Andrey Grigoriev | All rights reserved
       </p>
     </footer>
+    <div id="myModalStatic" class="modal">
+      <div class="modal__content">
+        <div class="modal__header"><span class="modal__close">x</span></div>
+        <div class="modal__body">
+          <h3 class="modal__body-title">Congratilations!!!</h3>
+          <h4 class="modal__body-text">
+            You have successfully subscribed for the news!
+          </h4>
+          <button class="modal__btn">GOT IT!</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/index.js"></script>
+    <script src="./js/formSubmit.js"></script>
   </body>
 </html>

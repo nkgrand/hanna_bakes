@@ -13,11 +13,9 @@ import { slideshow } from "./smallSlider.js";
 import { modalSlider } from "./modalSlider.js";
 import { btnPress } from "./mainBtnPress.js";
 
-const body = document.querySelector("body");
-
-modalWindowCreate(body);
-modalShowWindow(body);
-sliderLoop(body);
-slideshow(body);
-modalSlider(body);
-btnPress(body);
+modalWindowCreate(document.querySelector("body"));
+modalShowWindow(document.querySelector("body"));
+sliderLoop(document.querySelector("#slider"));
+slideshow(document.querySelector("#slider"));
+modalSlider(document.querySelector("#slider"));
+btnPress(document.querySelector("body"));
