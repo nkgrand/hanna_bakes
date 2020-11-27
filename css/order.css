@@ -224,6 +224,7 @@ a {
   width: 250px;
   border: 1px solid #44444638;
   margin-top: 30px;
+  transition: all 0.3s;
 }
 .card:hover {
   cursor: pointer;

@@ -8,10 +8,10 @@
     const el = wrapper.querySelectorAll(".card");
 
     for (let i = 0; i < el.length; i++) {
-      sliderElClick(el[i], i);
+      activeMenuItemClick(el[i], i);
     }
 
-    function sliderElClick(button, id) {
+    function activeMenuItemClick(button, id) {
       button.addEventListener("click", function () {
         error();
       });
@@ -42,4 +42,20 @@
 
   cardClick(document.querySelector(".card__wrapper"));
   cartClick(document.querySelector("#orderSide"));
+})();
+
+(() => {
+  function activeMenuItem(wrapper) {
+    const container = wrapper.querySelector(".container");
+    container.addEventListener("click", function (e) {
+      const items = wrapper.querySelectorAll(".subMenu__link");
+      const target = e.target;
+      Array.from(items).forEach((item) => {
+        item.classList.remove("active");
+      });
+      target.classList.add("active");
+    });
+  }
+
+  activeMenuItem(document.querySelector(".cd-accordion-menu"));
 })();
